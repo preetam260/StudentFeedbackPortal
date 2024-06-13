@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Course Feedback</title>
+    <link rel="stylesheet" type="text/css" href="cocurcularform.css">
+</head>
+<body>
+    <div class="container">
+        <br><br>
+        <h1>Student Course Feedback</h1>
+        <p>Rating Scale:</p>
+        <ul>
+            <li>1 - Bad</li>
+            <li>2 - Satisfied</li>
+            <li>3 - Good</li>
+            <li>4 - Very Good</li>
+            <li>5 - Excellent</li>
+        </ul>
+
+        <form action="/cocurcular" method="post">
+        
+            <label for="rollno">Enter your 12-digit rollno number</label><br>
+            <input type="text" name="rollno" id="rollno"  required>
+            
+
+            <label for="satisfaction">Satisfaction </label><br>
+            <input type="radio" name="satisfaction" id="clarity1" value="1" required> 1
+            <input type="radio" name="satisfaction" id="clarity2" value="2"> 2
+            <input type="radio" name="satisfaction" id="clarity3" value="3"> 3
+            <input type="radio" name="satisfaction" id="clarity4" value="4"> 4
+            <input type="radio" name="satisfaction" id="clarity5" value="5"> 5<br><br>
+
+            <label for="rating">Rating for the cocurricular activities?</label><br>
+            <input type="radio" name="rating" id="materials1" value="1" required> 1
+            <input type="radio" name="rating" id="materials2" value="2"> 2
+            <input type="radio" name="rating" id="materials3" value="3"> 3
+            <input type="radio" name="rating" id="materials4" value="4"> 4
+            <input type="radio" name="rating" id="materials5" value="5"> 5<br><br>
+
+            <label for="suggestions"> Any Suggestions</label><br>
+            <textarea name="suggestions" id="suggestions" placeholder="Enter your suggestions"></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
