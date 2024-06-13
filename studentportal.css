@@ -205,3 +205,6 @@ a.sidebar-link:hover {
     text-align: center; /* Align text to center */
     color: white; /* Set text color to white */
 }
+.remove-hover-underline:hover {
+    text-decoration: none !important;
+}

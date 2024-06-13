@@ -1,10 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+:root {
+    --bgc: #204873f4;
+    --con_bgc: rgba(179, 209, 221, 0.901);
+    --shadow: rgba(201, 191, 191, 0.315);
+}
 
 ::after,
 ::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.col-12 {
+    margin: 1vh;
+    padding: 1vh;
+    border-radius: 5px;
+    border: 1px solid rgb(209, 203, 203);
+    box-shadow: 7px 7px var(--shadow);
+
+    pointer-events: auto;
+    transform: scale(1);
+    transition: all 0.4s;
+}
+
+.feedlogo {
+    width: 10vw;
+    height: 20vh;
+    margin-right: 1vw;
+}
+
+button {
+    margin: 5px;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    background-color: rgb(195, 195, 243);
+}
+
+span {
+    font-style: italic;
+    color: rgb(92, 148, 243);
+}
+
+#he {
+    color: rgb(180, 113, 244);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-hghlght {
+    pointer-events: auto;
+    transform: scale(1);
+    transition: all 0.4s;
+}
+
+.col-12:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.container:hover .col-12:not(:hover) {
+    opacity: 0.65;
+    transform: scale(0.95);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* Replace 'your-image-url.jpg' with the path to your image */
+    background-size: cover;
+    opacity: 1;
+    /* Adjusted opacity */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Adjusted alignment */
+    width: 100%;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--con_bgc);
+    /* Added opacity to make the form container semi-transparent */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px var(--shadow);
+    margin: 20px;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Placeholder icons */
+input[type="text"],
+input[type="password"] {
+    padding-left: 40px;
+    /* Increase padding to make space for icon */
+    background-image: url('username_icon.jpeg');
+    /* Replace 'username_icon.png' with your username icon */
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 10px center;
+    box-shadow: 2px 3px 5px var(--shadow);
+    /* Adjusted position to the left */
+}
+
+input[type="password"] {
+    background-image: url('password_icon.jpeg');
+    /* Replace 'password_icon.png' with your password icon */
+}
+
+button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+input:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 a {
@@ -35,13 +160,16 @@ body {
     transition: all 0.35s ease-in-out;
     background-color: #fafbfe;
 }
+#sew{
+height: 3rem;
+}
 
 #sidebar {
     width: 70px;
     min-width: 70px;
     z-index: 1000;
     transition: all .25s ease-in-out;
-    background-color: #0e2238;
+    background-color: var(--bgc);
     display: flex;
     flex-direction: column;
 }
@@ -140,6 +268,7 @@ a.sidebar-link:hover {
     transform: rotate(45deg);
     transition: all .2s ease-out;
 }
+
 .navbar-custom {
     background-color: #0e2238;
 }
@@ -148,6 +277,7 @@ a.sidebar-link:hover {
 .navbar-custom .navbar-nav .nav-link {
     color: white;
 }
+
 .navbar-custom {
     background-color: #0e2238;
 }
@@ -175,33 +305,32 @@ a.sidebar-link:hover {
 .navbar-custom .navbar-nav .nav-link:hover {
     color: #ccc;
 }
+
 /* Custom CSS for button colors */
 .green-btn {
-    background-color: #28a745; /* Green */
-    border-color: #28a745; /* Green */
+    background-color: #28a745;
+    /* Green */
+    border-color: #28a745;
+    /* Green */
 }
 
 .orange-btn {
-    background-color: #fd7e14; /* Orange */
-    border-color: #fd7e14; /* Orange */
+    background-color: #fd7e14;
+    /* Orange */
+    border-color: #fd7e14;
+    /* Orange */
 }
 
 .blue-btn {
-    background-color: #007bff; /* Blue */
-    border-color: #007bff; /* Blue */
+    background-color: #007bff;
+    /* Blue */
+    border-color: #007bff;
+    /* Blue */
 }
+
 .wrapper {
     display: flex;
     flex-direction: row;
-    min-height: 100vh; /* Changed height to min-height */
-}
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #0e2238; /* Changed background color */
-    padding: 10px 0;
-    text-align: center; /* Align text to center */
-    color: white; /* Set text color to white */
+    min-height: 100vh;
+    /* Changed height to min-height */
 }
