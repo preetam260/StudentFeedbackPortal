@@ -1,0 +1,26 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks</title>
+    <link rel="stylesheet" type="text/css" href="feedbacks.css">
+</head>
+<body>
+    <h2>Recieved Course Feedbacks</h2>
+    <ul>
+        {{#each feedbacks}}
+            <li>
+                <h3>Feedback {{@index}}</h3>
+                <p>Clarity: {{this.clarity}}</p>
+                <p>Materials: {{this.materials}}</p>
+                <p>Engagement: {{this.engagement}}</p>
+                <p>Assessments: {{this.assessments}}</p>
+                <p>Real World: {{this.realWorld}}</p>
+                <p>Suggestions: {{this.suggestions}}</p>
+            </li>
+        {{/each}}
+    </ul>
+</body>
+</html>
+
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks</title>
+    <link rel="stylesheet" type="text/css" href="cocurcularfeedback.css">
+</head>
+<body>
+    <h2>Recieved Course Feedbacks</h2>
+    <ul>
+        {{#each feedbacks}}
+            <li>
+                <h3>Rollno {{rollno}}</h3>
+                <p>Satisfaction: {{this.satisfaction}}</p>
+                <p>Rating: {{this.rating}}</p>
+                <p>Suggestions: {{this.suggestions}}</p>
+            </li>
+        {{/each}}
+    </ul>
+</body>
+</html>
+
+
+

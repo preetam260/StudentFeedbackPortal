@@ -1,0 +1,69 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us Page</title>
+    <link rel="stylesheet" type="text/css" href="contactus.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header class="header">
+        <a href="#" class="logo">Student Feedback</a>
+        <nav class="nav-items">
+            <a href="/home">Home</a>
+            <a href="#">About</a>
+            <a href="/contactus">Contact</a>
+            <a href="/login">Login</a> <!-- Fixed typo here, 'login' to 'Login' -->
+        </nav>
+    </header>
+
+    <!-- banner section -->
+    <section class="banner">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230822131732/images.png" alt="Welcome to our Contact Us page">
+        <h1>Get in Touch With Us</h1>
+        <p>We're here to answer any questions you may have.</p>
+    </section>
+
+    <!-- Contact form -->
+    <section class="contact-form">
+        <div class="form-container">
+            <h2>Your Details</h2>
+            <form action="/contactus" method="POST" class="contact">
+
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Company contact info -->
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <address>
+            WT ASSIGNMENT TEAM<br>
+            Suraj, Santhosh, Sohan, Preetam<br>
+            Hyderabad, Telangana 500063<br>
+            Phone: <a href="tel:1234567890">8639450379</a><br>
+            Email: <a href="mailto:info@example.com">manjumelboys@gmail.com</a>
+        </address>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>© 2024 our Company. All rights reserved.</p>
+    </footer>
+    
+</body>
+
+</html>
