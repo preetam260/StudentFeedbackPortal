@@ -9,3 +9,6 @@ And the hbs files into templates folder (There was a typo tempelates)
 
 We used Handlebars (hbs) files instead of plain HTML files in a web development project offers several 
 advantages, especially when building dynamic web applications
+
+Initialize a node.js project and also include necessary dependencies
+Then run the server using node index.js
